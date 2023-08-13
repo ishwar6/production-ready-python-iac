@@ -1,0 +1,12 @@
+Build docker Image: docker build -t api -f location .
+RUN: docker run -d -p 9000:9000 api
+List all containers: docker ps 
+List all (including stopped): docker ps -a 
+docker stop container_id
+docker rm container_id
+docker rmi image_id
+docker exec -it container_id COMMAND
+docker exec -it container_id ls
+docker exec -it container_id bash
+docker logs container_id
+

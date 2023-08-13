@@ -1,0 +1,4 @@
+Steps Missing: 
+1. Environment variables: django-dotenv
+2. Allowed Host, DB creds, Debug should come from env -> jenkins secret manager. 
+
