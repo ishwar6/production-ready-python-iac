@@ -10,3 +10,15 @@ docker exec -it container_id ls
 docker exec -it container_id bash
 docker logs container_id
 
+
+
+Terraform
+terraform init (to start terraform plugin, to download and to initialize)
+terraform fmt (to format the code)
+terraform validate
+terraform plan
+terraform apply
+terraform workspace new <NAME> (for ex dev)
+terraform workspace select dev
+terrafrom workspace list
+terraform workspace delete

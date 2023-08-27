@@ -34,12 +34,15 @@ def get_services_list():
 
 
 def get_order_status(order_id):
+    print("calling")
     payload = {
         "key": API_KEY,
         "action": "status",
-        "order": order_id
+        "order": int(order_id)
     }
     response = requests.post(BASE_URL, data=payload)
+    print(response.text)
+    return response.text
     return response.json()
 
 
@@ -86,8 +89,8 @@ def cancel_order(order_id):
 
 
 # Example usage:
-services = get_services_list()
-print(services)
+# services = get_services_list()
+# print(services)
 status = get_order_status(34410)
 order_response = add_order(service_id=1, url="https://example.com", quantity=100)
 print(order_response)
